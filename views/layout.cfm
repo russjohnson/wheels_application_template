@@ -5,8 +5,8 @@
 	<cfoutput>
 	    <title>Listy</title>
 	
-	    #styleSheetLinkTag(sources="base.css,themes/drastic-dark/style.css")#
-	    #javaScriptIncludeTag(sources="jquery-1.3.min.js", type="text/javascript")#
+	    #styleSheetLinkTag(sources="base.css,themes/drastic-dark/style.css, jqueryui/themes/drastic-dark/jquery-ui.css")#
+	    #javaScriptIncludeTag(sources="jquery-1.3.2.min.js, jquery-ui-1.7.2.custom.min.js", type="text/javascript")#
 	</cfoutput>
 </head>
 <body>
@@ -22,26 +22,16 @@
     <div id="wrapper">
       <div id="main">
 
-         <cfoutput> #includePartial('/shared/render_flash')#</cfoutput>
+        <cfoutput> #includePartial('/shared/render_flash')#</cfoutput>
           
-        <div class="block" id="block-text">
-          <div class="secondary-navigation">
-            <ul>
-              <li class="active first"><a href="#block-text">Text</a></li>
-              <li><a href="#block-tables">Tables</a></li>
-              <li><a href="#block-forms">Forms</a></li>
-              <li><a href="#block-messages">Messages</a></li>
-              <li><a href="#block-forms-2">2 Columns Forms</a></li>
-              <li><a href="#block-lists">Lists</a></li>
-            </ul>
-            <div class="clear"></div>
-          </div>
+        <div class="block">
+          <cfoutput>#includePartial('/shared/secondary_navigation')#</cfoutput>
+
           <div class="content">
-            <h2 class="title">Text</h2>
+            <h2 class="title">This should be a variable</h2>
             <div class="inner">
                 <cfoutput>
-                
-                #contentForLayout()#
+                    #contentForLayout()#
                 </cfoutput>
             </div>
           </div>
@@ -54,6 +44,7 @@
           </div>
         </div>
       </div>
+      
       <div id="sidebar">
         <div class="block">
           <h3>Simple Block</h3>
