@@ -4,7 +4,7 @@
 --->
 <cfscript>
     // Home Route
-    addRoute(name="home", pattern="", controller="public", action="index");
+    addRoute(name="home", pattern="", controller="public", action="format");
 
     // Account and Login routes
     addRoute(name="login", pattern="login", controller="sessions", action="new");
