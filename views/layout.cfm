@@ -3,7 +3,7 @@
 <head>
 	<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
 	<cfoutput>
-	    <title>Listy</title>
+	    <title>CFWheels App Template</title>
 	
 	    #styleSheetLinkTag(sources="base.css,themes/drastic-dark/style.css, jqueryui/themes/drastic-dark/jquery-ui.css")#
 	    #javaScriptIncludeTag(sources="jquery-1.3.2.min.js, jquery-ui-1.7.2.custom.min.js", type="text/javascript")#
@@ -12,7 +12,7 @@
 <body>
   <div id="container">
     <div id="header">
-        <h1><a href="index.html">Listy</a></h1>
+        <h1><a href="/">CFWheels App Template</a></h1>
         <cfoutput>
             #includePartial('/shared/user_navigation')#
             

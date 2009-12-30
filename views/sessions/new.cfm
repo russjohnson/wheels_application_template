@@ -1,6 +1,7 @@
 <cfoutput>
 
-<!--- <div class="clearfix">
+<!--- TODO: THIS CODE NEEDS TO BE MOVED TO ITS OWN VIEWS 
+<div class="clearfix">
                 
     <div class="two-col-b left">
       
@@ -29,7 +30,7 @@
 <div id="box">
     <h1> Please sign in or #linkTo(text="create an account", route="signup")#</h1>
     <div class="block" id="block-login">
-        <h2>Listy</h2>
+        <h2>CFWheels App Template</h2>
         <div class="content login">
             #includePartial('/shared/render_flash')#
             <!--- <div class="flash">
