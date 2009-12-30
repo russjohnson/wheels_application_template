@@ -34,6 +34,8 @@
     <div id="wrapper">
       <div id="main">
 
+         <cfoutput> #includePartial('/shared/render_flash')#</cfoutput>
+          
         <div class="block" id="block-text">
           <div class="secondary-navigation">
             <ul>
@@ -49,7 +51,10 @@
           <div class="content">
             <h2 class="title">Text</h2>
             <div class="inner">
-              <cfoutput>#contentForLayout()#</cfoutput>
+                <cfoutput>
+                
+                #contentForLayout()#
+                </cfoutput>
             </div>
           </div>
         </div>

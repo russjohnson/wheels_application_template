@@ -31,6 +31,7 @@
     <div class="block" id="block-login">
         <h2>Listy</h2>
         <div class="content login">
+            #includePartial('/shared/render_flash')#
             <!--- <div class="flash">
                             <div class="message notice">
                                 <p>Logged in successfully</p>
@@ -64,7 +65,7 @@
                 <div class="group navform">
                     <div class="right">
                         <button class="button" type="submit">
-                            <img src="images/icons/key.png" alt="Save" /> Login
+                            <img src="/images/icons/key.png" alt="Save" /> Login
                         </button>
                         <div class="clear"></div>                                
                     </div>
