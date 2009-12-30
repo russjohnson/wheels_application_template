@@ -8,10 +8,10 @@
             <a href="##block-text">Active</a>
         </li>
         <li>
-            <a href="##block-login">Login</a>
+            #linkTo(text="Login", route="login")#
         </li>
         <li>
-            <a href="##block-signup">Signup</a>
+            #linkTo(text="Signup", route="signup")#
         </li>
         <li>
             #linkTo(text="Formatting", controller="public", action="format")#

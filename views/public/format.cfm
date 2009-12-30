@@ -67,7 +67,7 @@
                 <div class="actions-bar">
                   <div class="actions">
                     <button class="button" type="submit">
-                      <img src="images/icons/cross.png" alt="Delete" /> Delete
+                      <img src="/images/icons/cross.png" alt="Delete" /> Delete
                     </button>
                   </div>
                   <div class="pagination">
@@ -116,10 +116,10 @@
                 </div>
                 <div class="group navform">
                   <button class="button" type="submit">
-                    <img src="images/icons/tick.png" alt="Save" /> Save
+                    <img src="/images/icons/tick.png" alt="Save" /> Save
                   </button>
                   <a href="#header" class="button">
-                    <img src="images/icons/cross.png" alt="Cancel"/> Cancel
+                    <img src="/images/icons/cross.png" alt="Cancel"/> Cancel
                   </a>
                   <div class="clear"></div>
                 </div>
@@ -150,8 +150,8 @@
                 <div class="message warning">
                   <p>Warning message</p>
                 </div>
-                <div class="message notice">
-                  <p>Notice message</p>
+                <div class="message success">
+                  <p>Success message</p>
                 </div>
               </div>
             </div>
@@ -213,10 +213,10 @@
                 <div class="clear"></div>
                 <div class="group navform">
                   <button class="button" type="submit">
-                    <img src="images/icons/tick.png" alt="Save" /> Save
+                    <img src="/images/icons/tick.png" alt="Save" /> Save
                   </button>
                   <a href="#header" class="button">
-                    <img src="images/icons/cross.png" alt="Cancel"/> Cancel
+                    <img src="/images/icons/cross.png" alt="Cancel"/> Cancel
                   </a>
                   <div class="clear"></div>
                 </div>
@@ -243,7 +243,7 @@
               <ul class="list">
                 <li>
                   <div class="left">
-                    <a href="#"><img class="avatar" src="images/avatar.png" alt="avatar" /></a>
+                    <a href="#"><img class="avatar" src="/images/avatar.png" alt="avatar" /></a>
                   </div>
                   <div class="item">
                     <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
@@ -251,7 +251,7 @@
                 </li>
                 <li>
                   <div class="left">
-                    <a href="#"><img class="avatar" src="images/avatar.png" alt="avatar" /></a>
+                    <a href="#"><img class="avatar" src="/images/avatar.png" alt="avatar" /></a>
                   </div>
                   <div class="item">
                     <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
@@ -259,7 +259,7 @@
                 </li>
                 <li>
                   <div class="left">
-                    <a href="#"><img class="avatar" src="images/avatar.png" alt="avatar" /></a>
+                    <a href="#"><img class="avatar" src="/images/avatar.png" alt="avatar" /></a>
                   </div>
                   <div class="item">
                     <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>

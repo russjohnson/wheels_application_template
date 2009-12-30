@@ -10,15 +10,15 @@
 	</cfoutput>
 </head>
 <body>
-  <div id="container">
-    <div id="wrapper">
-      <div class="content">
-        <div class="inner">
-          <cfoutput>#contentForLayout()#</cfoutput>
+    <div id="container">
+        <div id="wrapper">
+            <div class="content">
+                <div class="inner">
+                    <cfoutput>#contentForLayout()#</cfoutput>
+                </div>
+            </div>
         </div>
-      </div>
+        <div class="clear"></div>
     </div>
-    <div class="clear"></div>
-  </div>
 </body>
 </html>

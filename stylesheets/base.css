@@ -271,7 +271,7 @@ input.checkbox {
 }
 
 .form div.group span.field-with-errors {
-  border:1px solid red;
+  display-inline;
 }
 
 .form .fieldWithErrors .error {
