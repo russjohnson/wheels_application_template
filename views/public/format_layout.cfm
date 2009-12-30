@@ -26,7 +26,7 @@
         
             #contentForLayout()#
                 
-            #includePartial('/shared/foooter')#
+            #includePartial('/shared/footer')#
         </cfoutput>
       </div>
       

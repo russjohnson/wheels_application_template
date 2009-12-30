@@ -37,7 +37,7 @@
           </div>
         </div>
                 
-        <cfoutput>#includePartial('/shared/foooter')#</cfoutput>
+        <cfoutput>#includePartial('/shared/footer')#</cfoutput>
       </div>
       
       <div id="sidebar">

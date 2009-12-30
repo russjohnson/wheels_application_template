@@ -11,46 +11,14 @@
 </head>
 <body>
   <div id="container">
-    <!--- <div id="header">
-          <h1><a href="index.html">Listy</a></h1>
-          <div id="user-navigation">
-            <ul>
-              <li><a href="#">Profile</a></li>
-              <li><a href="#">Settings</a></li>
-              <li><a class="logout" href="#">Logout</a></li>
-            </ul>
-            <div class="clear"></div>
-          </div>
-          <div id="main-navigation">
-            <ul>
-              <li class="first"><a href="#block-text">Main Page</a></li>
-              <li class="active"><a href="#block-text">Active</a></li>
-              <li><a href="#block-login">Login</a></li>
-              <li><a href="#block-signup">Signup</a></li>
-            </ul>
-            <div class="clear"></div>
-          </div>
-        </div> --->
     <div id="wrapper">
-      <!--- <div id="main"> --->
-
-          <div class="content">
-            <div class="inner">
-              <cfoutput>#contentForLayout()#</cfoutput>
-            </div>
-          </div>
+      <div class="content">
+        <div class="inner">
+          <cfoutput>#contentForLayout()#</cfoutput>
         </div>
-
-                
-        <!--- <div id="footer">
-                  <div class="block">
-                    <p>Copyright &copy; 2009 Your Site.</p>
-                  </div>
-                </div> --->
-      <!--- </div> --->
-      
-      <div class="clear"></div>
+      </div>
     </div>
+    <div class="clear"></div>
   </div>
 </body>
 </html>

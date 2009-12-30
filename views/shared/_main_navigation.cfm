@@ -13,6 +13,9 @@
         <li>
             <a href="##block-signup">Signup</a>
         </li>
+        <li>
+            #linkTo(text="Formatting", controller="public", action="format")#
+        </li>
     </ul>
     <div class="clear"></div>
 </div>
