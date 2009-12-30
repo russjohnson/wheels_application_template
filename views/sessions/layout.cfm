@@ -5,7 +5,7 @@
 	<cfoutput>
 	    <title>Listy</title>
 	
-	    #styleSheetLinkTag(sources="base.css,themes/drastic-dark/style.css")#
+	    #styleSheetLinkTag(sources="base.css,themes/#session.theme#/style.css")#
 	    #javaScriptIncludeTag(sources="jquery-1.3.min.js", type="text/javascript")#
 	</cfoutput>
 </head>

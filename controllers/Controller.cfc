@@ -11,4 +11,14 @@
 
 component extends="Wheels" output="false" {
     
+    public void function init(){
+        filters(through="theme", except="switchTheme");
+    }
+    
+    public void function theme(){
+        if (not structKeyExists(session, "theme")){
+            session.theme = "drastic-dark";
+        }
+    }
+    
 }

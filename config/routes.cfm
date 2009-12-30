@@ -15,4 +15,6 @@
     addRoute(name="resetPasswordForm", pattern="resetPassword/[token]", controller="users", action="resetPasswordForm");
     
     addRoute(name="myaccount", pattern="myaccount/[username]", controller="users", action="myaccount");
+    
+    addRoute(name="switchTheme", pattern="switchTheme/[theme]", controller="public", action="switchTheme");
 </cfscript>

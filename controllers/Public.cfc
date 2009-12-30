@@ -14,7 +14,11 @@ component extends="Controller" output="false" {
   }
   
   public void function format(){
-    renderPage(layout='format_layout');
+      renderPage(layout='format_layout');
   }
   
+  public void function switchTheme(){
+      session.theme = params.theme;
+      redirectTo(route='home');
+  }
 }
