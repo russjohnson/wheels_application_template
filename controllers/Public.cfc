@@ -13,28 +13,8 @@ component extends="Controller" output="false" {
     
   }
   
-  public void function show(){
-    
-  }
-  
-  public void function new(){
-    
-  }
-  
-  public void function edit(){
-    
-  }
-  
-  public void function create(){
-    
-  }
-  
-  public void function update(){
-    
-  }
-  
-  public void function destroy(){
-    
+  public void function format(){
+    renderPage(layout='format_layout');
   }
   
 }

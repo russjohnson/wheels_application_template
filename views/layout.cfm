@@ -28,7 +28,7 @@
           <cfoutput>#includePartial('/shared/secondary_navigation')#</cfoutput>
 
           <div class="content">
-            <h2 class="title">This should be a variable</h2>
+            <h2 class="title">Section title</h2>
             <div class="inner">
                 <cfoutput>
                     #contentForLayout()#
@@ -36,13 +36,8 @@
             </div>
           </div>
         </div>
-
                 
-        <div id="footer">
-          <div class="block">
-            <p>Copyright &copy; 2009 Your Site.</p>
-          </div>
-        </div>
+        <cfoutput>#includePartial('/shared/foooter')#</cfoutput>
       </div>
       
       <div id="sidebar">
