@@ -6,8 +6,6 @@ component output="false" extends="Controller" {
     }
     
     public void function index(){
-        userID = randRange(model("profile").minimum("id"), model("profile").maximum("id"));
-	    featured = model("profile").findOne(where="id = #userID#", include="user");
         users = model("User").findAll();
     }
     
@@ -58,7 +56,7 @@ component output="false" extends="Controller" {
 		//writeDump(var=user,abort=true);
 		if (user.save()){
 
-		    sendEmail(from="admin@listyapp.com", to=user.email, subject="ListApp.com account activation", template="new_user_activation_email", activationCode=user.activationCode);
+		    sendEmail(from="admin@yoursite.com", to=user.email, subject="Website account activation", template="new_user_activation_email", activationCode=user.activationCode);
 			flashInsert(success="Thanks for signing up! You cannot login yet however. We have sent you an email with a link to verify your email address.");
             redirectTo(route="home");
 		} else {
