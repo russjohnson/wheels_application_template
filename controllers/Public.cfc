@@ -6,7 +6,7 @@
 component extends="Controller" output="false" {
   
   public void function init(){
-    
+    filters(through="theme", except="switchTheme");
   }
   
   public void function index(){

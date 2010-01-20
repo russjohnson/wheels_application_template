@@ -1,6 +1,7 @@
 <cfcomponent extends="Controller" output="false">
     
     <cffunction name="init" output="false">
+        <cfset filters(through="theme", except="switchTheme")>
     </cffunction>
     
     <cffunction name="index" output="false">
