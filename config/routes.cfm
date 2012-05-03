@@ -4,7 +4,7 @@
 --->
 <cfscript>
     // Home Route
-    addRoute(name="home", pattern="", controller="public", action="format");
+    addRoute(name="home", pattern="", controller="public", action="index");
 
     // Account and Login routes
     addRoute(name="login", pattern="login", controller="sessions", action="new");
@@ -15,6 +15,4 @@
     addRoute(name="resetPasswordForm", pattern="resetPassword/[token]", controller="users", action="resetPasswordForm");
     
     addRoute(name="myaccount", pattern="myaccount/[username]", controller="users", action="myaccount");
-    
-    addRoute(name="switchTheme", pattern="switchTheme/[theme]", controller="public", action="switchTheme");
 </cfscript>

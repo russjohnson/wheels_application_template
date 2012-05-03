@@ -8,16 +8,6 @@
   <h3>Switch Theme</h3>
   <ul class="navigation">
       <cfoutput>
-        <li>#linkTo(text="Default", route="switchTheme", theme="drastic-dark")#</li>
-        <li>#linkTo(text="Dark Red", route="switchTheme", theme="default")#</li>
-        <li>#linkTo(text="Bec", route="switchTheme", theme="bec")#</li>
-        <li>#linkTo(text="Bec-Green", route="switchTheme", theme="bec-green")#</li>
-        <li>#linkTo(text="Blue", route="switchTheme", theme="blue")#</li>
-        <li>#linkTo(text="Djime-Cerulean", route="switchTheme", theme="djime-cerulean")#</li>
-        <li>#linkTo(text="Greenish", route="switchTheme", theme="reidb-greenish")#</li>
-        <li>#linkTo(text="Kathleene", route="switchTheme", theme="kathleene")#</li>
-        <li>#linkTo(text="Orange", route="switchTheme", theme="orange")#</li>
-        <li>#linkTo(text="Warehouse", route="switchTheme", theme="warehouse")#</li>
       </cfoutput>
   </ul>
 </div>

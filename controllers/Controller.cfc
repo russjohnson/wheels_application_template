@@ -4,21 +4,14 @@
 // @@License:
 
 /*
-    This is the parent controller file that all your controllers should extend.
+		This is the parent controller file that all your controllers should extend.
 	You can add functions to this file to make them globally available in all your controllers.
 	Do not delete this file.
 */
 
 component extends="Wheels" output="false" {
-    
-    public void function init(){
-        filters(through="theme", except="switchTheme");
-    }
-    
-    public void function theme(){
-        if (not structKeyExists(session, "theme")){
-            session.theme = "drastic-dark";
-        }
-    }
-    
+		
+		public void function init(){
+		}
+		
 }

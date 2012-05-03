@@ -4,8 +4,8 @@
 	Example: <cfset set(dataSourceName="devDB")>
 --->
 <cfscript>
-    set(dataSourceName="listy");
+    set(dataSourceName="cfwheels_boilerplate");
     
-    application.domain = "listy.dev";
+    application.domain = "wheels_template.dev";
 </cfscript>
 

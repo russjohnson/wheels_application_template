@@ -1,5 +1,3 @@
-<div id="footer">
-  <div class="block">
-    <p>Copyright &copy; 2009-2010 Mad Piranha, Inc.</p>
-  </div>
-</div>
+<footer>
+	<p>Copyright &copy; 2009-<cfoutput>#datePart("yyyy", now())#</cfoutput> Mad Piranha, Inc.</p>
+</footer>
