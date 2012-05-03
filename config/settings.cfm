@@ -14,4 +14,9 @@
 --->
 <cfscript>
     set(URLRewriting="on");
+
+    // form defaults for bootstrap
+    set(functionName='textField', labelPlacement='before', prependToLabel='<div class="control-group">', labelClass='control-label', class='input-xlarge', prepend='<div class="controls">', append='</div></div>');
+    set(functionName='textFieldTag', labelPlacement='before', prependToLabel='<div class="control-group">', labelClass='control-label', class='input-xlarge', prepend='<div class="controls">', append='</div></div>');
+    set(functionName='passwordField', labelPlacement='before', prependToLabel='<div class="control-group">', labelClass='control-label', class='input-xlarge', prepend='<div class="controls">', append='</div></div>');
 </cfscript>

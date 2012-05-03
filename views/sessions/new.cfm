@@ -28,7 +28,7 @@
 
 
 <div id="box">
-    <h1> Please sign in or #linkTo(text="create an account", route="signup")#</h1>
+    <h2> Please sign in or #linkTo(text="create an account", route="signup")#</h2>
     <div class="block" id="block-login">
         <h2>CFWheels App Template</h2>
         <div class="content login">
