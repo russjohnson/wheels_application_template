@@ -9,7 +9,7 @@
     // Account and Login routes
     addRoute(name="login", pattern="login", controller="sessions", action="new");
     addRoute(name="logout", pattern="logout", controller="sessions", action="destroy");
-    addRoute(name="signup", pattern="signup", controller="users", action="new");
+    addRoute(name="signup", pattern="signup", controller="accounts", action="new");
     addRoute(name="activate", pattern="activation/[activationCode]", controller="activations", action="activate");
     addRoute(name="resetPassword", pattern="passwordReset", controller="users", action="resetPassword");
     addRoute(name="resetPasswordForm", pattern="resetPassword/[token]", controller="users", action="resetPasswordForm");

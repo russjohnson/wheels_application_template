@@ -37,6 +37,10 @@
 
 		<div class="container">
 
+			<cfoutput>
+				#includePartial('/shared/render_flash')#
+			</cfoutput>
+
 			<!-- Main hero unit for a primary marketing message or call to action -->
 			<div class="hero-unit">
 				<h1>Hello, world!</h1>
