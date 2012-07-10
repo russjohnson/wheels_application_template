@@ -1,71 +1,71 @@
-<cfcomponent extends="Controller">
-  
-  <cffunction name="init">
-    <cfset filters(through="loginProhibited", only="new, create")>
-  </cffunction>
+/**
+*
+* @file  wheels_app_template/controllers/Sessions.cfc
+* @author  Russ Johnson ( russ@angry-fly.com )
+* @description Handles login/logout functionality
+*
+*/
 
-	<cffunction name="new">
-	</cffunction>
+component output="false"  {
+
+	public function init(){
+		filters(through="loginProhibited", only="new, create");
+	}
+
+	public any function new() {
+	}
 	
-	<cffunction name="create">
-		<cfif params.login is "" or params.password is "">
-			<cfset flashInsert(error="Login failed, please try again")>
-			<cfset redirectTo(action="new")>
-		<cfelse>
-			<cfset $passwordAuthentication(params.login, params.password) />
-		</cfif>
-	</cffunction>
+	public any function create() {
+		if(params.login is "" or params.password is ""){
+			flashInsert(error="Login failed, please try again");
+			redirectTo(action="new");
+		} else {
+			$passwordAuthentication(params.login, params.password);
+		}
+	}
 	
-	<cffunction name="destroy">
-		<!--- todo: need to check for the remember me flag here and delete cookie if needed --->
-		<cfset structDelete(session, 'currentUser') />
-		<cfset flashInsert(success='You have been logged out') />
-		<cfset redirectTo(route="home") />
-	</cffunction>
+	public any function destroy() {
+		// todo: need to check for the remember me flag here and delete cookie if needed 
+		structDelete(session, 'currentUser');
+		flashInsert(success='You have been logged out');
+		redirectTo(route="home");
+	}
 	
-	<!--- private methods --->
-	
-	<cffunction name="$passwordAuthentication">
-		<cfargument name="login" type="any" required="true" />
-		<cfargument name="password" type="any" required="true" />
-		
-		<cfset authUser = model("user").findOneByUsername(arguments.login)>
+	// private methods
+
+	public any function $passwordAuthentication(string login, string password) {
+		authUser = model("user").findOneByUsername(arguments.login);
 			
-		<cfif isboolean(authUser) and Not authUser>
-			<cfset $failedLogin()>
-		</cfif>
+		if(isboolean(authUser) and Not authUser){
+			$failedLogin();
+		}
 		
-		<cfif authUser.isPassword(arguments.password) AND authUser.activatedAt is NOT "">
-			<cfset $successfulLogin(authUser)>
-		<cfelse>
-			<cfset $failedLogin()>
-		</cfif>
-	</cffunction>
+		if(authUser.isPassword(arguments.password) AND authUser.activatedAt is NOT ""){
+			$successfulLogin(authUser);
+		} else {
+			$failedLogin();
+		}
+	}
 	
-	<cffunction name="$successfulLogin">
-	 <cfargument name="user" type="any" required="true">
-	   
-	  <cfset session.currentUser = arguments.user>
+	public any function $successfulLogin(any user) {
+		session.currentUser = arguments.user;
 		
-		<!---<cfif structKeyExists(params,"rememberMe")>
+		/*<cfif structKeyExists(params,"rememberMe")>
 			<cfcookie name="app.rememberme" value="true" expires="14" />
-		</cfif>--->
+		</cfif>*/
 	   
-	  <!--- Update the lastLogin column 
+	  /* Update the lastLogin column 
 		<cfset session.currentUser.lastLogin = now()>
-		<cfset session.currentUser.save()>--->
+		<cfset session.currentUser.save()> */
 		
-		<!--- This redirects the user to the default account page but you can change this to go where you want --->
-		<cfset flashInsert(success="Hello <strong>#session.currentUser.firstName#</strong>! You are now signed in.")>
-		<cfset redirectTo(route="home")>
-	</cffunction>
+		// This redirects the user to the default account page but you can change this to go where you want
+		flashInsert(success="Hello <strong>#session.currentUser.firstName#</strong>! You are now signed in.");
+		redirectTo(route="home");
+	}
 	
-	<cffunction name="$failedLogin">
-		<!---
-			TODO : would like to add a method call here to update a failed login table...
-		--->
-		<cfset flashInsert(error="Login failed, please try again!")>
-		<cfset redirectTo(action="new")>
-	</cffunction>
+	public any function $failedLogin() {
+		flashInsert(error="Login failed, please try again");
+		redirectTo(action='new');
+	}
 	
-</cfcomponent>
+}
