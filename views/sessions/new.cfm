@@ -32,7 +32,6 @@
 	<div class="block" id="block-login">
 		<h2>CFWheels App Template</h2>
 		<div>
-			#includePartial('/shared/render_flash')#
 
 			#startFormTag(action="create", class="well")#
 				#textFieldTag(name="login", 

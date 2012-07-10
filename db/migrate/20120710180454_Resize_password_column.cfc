@@ -20,12 +20,12 @@
 <cfcomponent extends="plugins.dbmigrate.Migration" hint="Resize password column">
   <cffunction name="up">
     <cfscript>
-	    changeColumn(table='users', columnType='string', columnName='password', limit=100);
+	    changeColumn(table='users', columnType='string', columnName='password', limit=200);
     </cfscript>
   </cffunction>
   <cffunction name="down">
     <cfscript>
-		changeColumn(table='users',columnName='password', limit=50);
+		changeColumn(table='users', columnType='string', columnName='password', limit=50);
     </cfscript>
   </cffunction>
 </cfcomponent>

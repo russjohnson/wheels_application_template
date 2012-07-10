@@ -6,7 +6,7 @@
 *
 */
 
-component output="false"  {
+component output="false" extends="Controller"  {
 
 	public function init(){
 		filters(through="loginProhibited", only="new, create");

@@ -15,6 +15,14 @@
 						<li>#linkTo(text="Signup", route="signup")#</li>
 					</cfoutput>
 				</ul>
+
+				<cfif structKeyExists(session, "currentUser")>
+					<ul class="nav pull-right">
+						<li>
+							<cfoutput><a href="">#session.currentUser.firstName# #session.currentUser.lastName#</a></cfoutput>
+						</li>
+					</ul>
+				</cfif>
 			</div><!--/.nav-collapse -->
 		</div>
 	</div>
