@@ -1,3 +1,12 @@
 .required {
 	color: red;
 }
+
+ul.alert {
+	margin: 2px 0;
+}
+
+ul.alert li {
+	margin: 0;
+	list-style: none;
+}

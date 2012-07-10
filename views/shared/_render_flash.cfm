@@ -1,17 +1,11 @@
 <cfoutput>
-  <div class="flash">
-    <cfif flashKeyExists('error')>
-      <div class="message error">
-        <p>#flash('error')#</p>
-      </div>
-    <cfelseif flashKeyExists('success')>
-      <div class="message success">
-        <p>#flash('success')#</p>
-      </div>
-    <cfelseif flashKeyExists('warning')>
-      <div class="message warning">
-        <p>#flash('warning')#</p>
-      </div>
-    </cfif>  
-  </div>
+	<cfif flashKeyExists('error')>
+			#flash('error')#
+	<cfelseif flashKeyExists('success')>
+			<p>#flash('success')#</p>
+	<cfelseif flashKeyExists('warning')>
+			<p>#flash('warning')#</p>
+	<cfelseif flashKeyExists('info')>
+			<p>#flash('info')#</p>
+	</cfif>
 </cfoutput>

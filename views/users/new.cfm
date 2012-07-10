@@ -1,7 +1,7 @@
 <cfoutput>
 	<h2> Please complete the form to create your account</h2>
 	<div>
-		#errorMessagesFor("user")#
+		#errorMessagesFor('user', 'alert alert-error')#
 		
 		#startFormTag(action="create", class="form-horizontal well")#
 

@@ -5,13 +5,6 @@
 	<cfset set(dataSourcePassword="")> 
 --->
 
-<!---
-	If you leave this setting commented out, Wheels will try to determine the URL rewrite capabilities automatically.
-	The URLRewriting setting can bet set to "On", "Partial" or "Off".
-	To run with "Partial" rewriting, the "PATH_INFO" variable needs to be supported by the web server.
-	To run with rewriting "On", you need to apply the necessary rewrite rules on the web server first.
-	<cfset set(URLRewriting="Partial")>
---->
 <cfscript>
     set(URLRewriting="on");
 
@@ -19,4 +12,6 @@
     set(functionName='textField', labelPlacement='before', prependToLabel='<div class="control-group">', labelClass='control-label', class='input-xlarge', prepend='<div class="controls">', append='</div></div>');
     set(functionName='textFieldTag', labelPlacement='before', prependToLabel='<div class="control-group">', labelClass='control-label', class='input-xlarge', prepend='<div class="controls">', append='</div></div>');
     set(functionName='passwordField', labelPlacement='before', prependToLabel='<div class="control-group">', labelClass='control-label', class='input-xlarge', prepend='<div class="controls">', append='</div></div>');
+
+    set(functionName='flash', prepend='<div class="alert"><button class="close" data-dismiss="alert">x</button>', append='</div>');
 </cfscript>
